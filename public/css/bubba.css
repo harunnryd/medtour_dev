@@ -1,0 +1,134 @@
+/*---------------*/
+/***** Bubba *****/
+/*---------------*/
+.caption-text p{
+    color:#a54b82;
+    font-weight: 600
+}
+
+.caption-text{
+    color: #fff
+}
+
+.caption-text h2{
+    text-align: center;
+    font-family: "muli";
+    font-size: 16px;
+    padding: 0em 2em;
+    padding-top: 3em;
+}
+.caption-text p{
+	text-align: center;
+    font-family: "muli";
+    font-size: 14px;
+	padding: 0em 2em;
+    /* padding: 0.5em 4em; */
+}
+.effect-bubba.image-layout1 {
+    background: url(../img/158.jpg) center no-repeat;
+	height: 150px;
+    cursor: pointer;
+    background-size: cover
+}
+.effect-bubba.image-layout2 {
+    background: url(../img/dentistry.jpg) center no-repeat;
+    height: 150px;
+    cursor: pointer;
+    background-size: cover
+}
+.effect-bubba.image-layout3 {
+    background: url(../img/check-ups.jpg) center no-repeat;
+    height: 150px;
+    cursor: pointer;
+    background-size: cover
+}
+.effect-bubba.image-layout4 {
+    background: url(../img/furnitureindex.jpg) center no-repeat;
+    height: 300px;
+    cursor: pointer;
+    background-size: cover
+}
+.effect-bubba.image-layout5 {
+    background: url(../img/carpartsindex.jpg) center no-repeat;
+    height: 300px;
+    cursor: pointer;
+    background-size: cover
+}
+.effect-bubba.image-layout6 {
+    background: url(../img/6.jpeg) center no-repeat;
+    height: 300px;
+    cursor: pointer;
+    background-size: cover
+}
+
+@media only screen and (min-width: 1200px){
+    .effect-bubba {
+        height: 340px !important;
+    }
+}
+.effect-bubba img {
+	opacity: 0.7;
+	-webkit-transition: opacity 0.35s;
+	transition: opacity 0.35s;
+}
+
+.effect-bubba:hover img {
+	opacity: 0.4;
+}
+
+.caption::before,
+ .caption::after {
+	position: absolute;
+	top: 30px;
+	right: 30px;
+	bottom: 30px;
+	left: 30px;
+	content: '';
+	opacity: 0;
+	-webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+	transition: opacity 0.35s, transform 0.35s;
+}
+
+.caption::before {
+	border-top: 1px solid #fff;
+	border-bottom: 1px solid #fff;
+	-webkit-transform: scale(0,1);
+	transform: scale(0,1);
+}
+
+
+.caption::after {
+	border-right: 1px solid #fff;
+	border-left: 1px solid #fff;
+	-webkit-transform: scale(1,0);
+	transform: scale(1,0);
+}
+
+.effect-bubba h2 {
+	-webkit-transition: -webkit-transform 0.35s;
+	transition: transform 0.35s;
+	-webkit-transform: translate3d(0,-20px,0);
+	transform: translate3d(0,-20px,0);
+}
+
+.effect-bubba p {
+	opacity: 0;
+	-webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+	transition: opacity 0.35s, transform 0.35s;
+	-webkit-transform: translate3d(0,20px,0);
+	transform: translate3d(0,20px,0);
+}
+
+.effect-bubba:hover .caption::before,
+.effect-bubba:hover .caption::after {
+	opacity: 1;
+	-webkit-transform: scale(1);
+	transform: scale(1);
+}
+
+.effect-bubba:hover h2,
+.effect-bubba:hover p {
+	opacity: 1;
+	-webkit-transform: translate3d(0,0,0);
+	transform: translate3d(0,0,0);
+}
