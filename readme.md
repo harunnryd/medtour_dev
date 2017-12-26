@@ -1,51 +1,70 @@
-<p align="center"><img src="https://laravel.com/assets/img/components/logo-laravel.svg"></p>
+## Laravel 5.4 Medical Tourism ***[PROGRESS 95%]***
 
-<p align="center">
-<a href="https://travis-ci.org/laravel/framework"><img src="https://travis-ci.org/laravel/framework.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/d/total.svg" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/v/stable.svg" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/license.svg" alt="License"></a>
-</p>
+Halo nama saya harun nur rasyid, saya seorang **Back End Programmer** di salah satu perusahaan Fintech didaerah Jekardah (Saat ini, kalau ada kesempatan pen pindah :v). Medical Tourism adalah jaringan Dokter dan Rumah sakit yang tersedia secara Online, siap membantu Pasien mencari layanan medis berkualitas tinggi dengan harga terbaik yang bisa dinegosiasikan di berbagai Negara, nantinya Medical Tourism akan menjadi Layanan medis terbesar di Dunia :D.
 
-## About Laravel
+## MedTour
+MedTour sendiri saya bangun dengan menggunakan Laravel 5.4 pada waktu itu, sebenarnya MedTour sendiri website pesanan client, namun karena satu dan lain hal, alhasil MedTour mangkrak dan sudah gak ada kelanjutannya lagi :p . Ohiya MedTour sendiri meng - implementasikan beberapa Design Pattern dan Teknologi, diantaranya :
+- Repository Pattern
+- Service Object
+- Singleton Pattern
+- Facade Pattern
+- Form Request alias Form Object
+- Dependency Injection (yaiyala lalapel :v) # ini yang membuat mudah peng implementasian dari Repository Pattern HAHAHA
+- ViewComposer
+- Policy [Role Policy, AccessRightPolicy]
+- Middleware [HasRole]
+- Multi-Auth
+- Request Form
+- Seeds
+- Model Observers
+- etc
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel attempts to take the pain out of development by easing common tasks used in the majority of web projects, such as:
+## Fitur
++ Compare antar Doctor
++ Konsultasi Dengan Doktor
++ CMS untuk Admin
++ Multi Auth
++ etc
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+## Development
++ Instal Laravel 5.4^
++ Git clone `git clone https://github.com/harunnryd/medtour_dev.git`
++ Instal dependency project : `composer install`
++ Buat database mysql dengan nama atau mau konfigurasi sendiri, terserah : `testdb_medtour`
++ Jalankan Migration + Seeds nya : `php artisan migrate --seed`
++ Jalankan development mode : `php artisan serve`
++ Open browser in : `localhost:8000/`
 
-Laravel is accessible, yet powerful, providing tools needed for large, robust applications. A superb combination of simplicity, elegance, and innovation give you tools you need to build any application with which you are tasked.
+## NOTE
+- Untuk login sebagai admin, pasang route `http://localhost:8000/admin/login`
+- username : `admin@medtour.id` password : `admin123`
+- sisanya bisa lihat didalam folder `database/seeds/*.php`
 
-## Learning Laravel
+## Screenshoots
+_**#1**_
+![Screenshoot](https://i.imgur.com/1pQtIW1.png)
 
-Laravel has the most extensive and thorough documentation and video tutorial library of any modern web application framework. The [Laravel documentation](https://laravel.com/docs) is thorough, complete, and makes it a breeze to get started learning the framework.
+_**#2**_
+![Screenshoot](https://i.imgur.com/xCkTZXf.png)
+_**#3**_
+![Screenshoot](https://i.imgur.com/m1fFDVP.pngg)
 
-If you're not in the mood to read, [Laracasts](https://laracasts.com) contains over 900 video tutorials on a range of topics including Laravel, modern PHP, unit testing, JavaScript, and more. Boost the skill level of yourself and your entire team by digging into our comprehensive video library.
+_**#4**_
+![Screenshoot](https://i.imgur.com/VEM0WD1.png)
 
-## Laravel Sponsors
+_**#5**_
+![Screenshoot](https://i.imgur.com/ZGWgnkV.png)
 
-We would like to extend our thanks to the following sponsors for helping fund on-going Laravel development. If you are interested in becoming a sponsor, please visit the Laravel [Patreon page](http://patreon.com/taylorotwell):
+_**#6**_
+![Screenshoot](https://i.imgur.com/uTZIi2u.png)
 
-- **[Vehikl](http://vehikl.com)**
-- **[Tighten Co.](https://tighten.co)**
-- **[British Software Development](https://www.britishsoftware.co)**
-- **[Styde](https://styde.net)**
-- [Fragrantica](https://www.fragrantica.com)
-- [SOFTonSOFA](https://softonsofa.com/)
+_**#7**_
+![Screenshoot](https://i.imgur.com/BjIZN9k.png)
 
-## Contributing
+### Contact Me
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](http://laravel.com/docs/contributions).
+[![Email](https://img.shields.io/badge/harunwols-gmail-brightgreen.svg)](mailto:harunwols@gmail.com)
+[![Facebook](https://img.shields.io/badge/harun__dillah-facebook-red.svg)](https://facebook.com/harun_dillah)
 
-## Security Vulnerabilities
-
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell at taylor@laravel.com. All security vulnerabilities will be promptly addressed.
-
-## License
-
-The Laravel framework is open-sourced software licensed under the [MIT license](http://opensource.org/licenses/MIT).
+[![Twitter](https://img.shields.io/badge/harunnryd-twitter-blue.svg)](https://twitter.com/harunnryd)
+[![Linkedin](https://img.shields.io/badge/harunnryd-linkedin-ff69b4.svg)](www.linkedin.com/in/harun-nur-rasyid-987683150)
